@@ -86,9 +86,19 @@ i{
 	border-radius: 50%;
 }
 /* Contacto */
+a {
+	color: #FFB0A7;
+}
 .contact {
 	background-image: ('../img/contacto.JPG');
 	background-size: cover;
+}
+/*Platitos*/
+#platos .modal-header h2 {
+	color: #FFB0A7;
+}
+.clearfix {
+ width:110%;
 }
 /*Index 2*/
 .especial {

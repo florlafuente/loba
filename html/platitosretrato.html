@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>LOBA</title>
+	<link href="../css/bootstrap.min.css" rel="stylesheet" media="screen"><!--Llamado a la hoja de estilos de bootstrap-->
+	<link href="../css/main.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Dosis" rel="stylesheet">
+</head>
+<body>
+	<div class="container"><!--Div contenedor de toda la página-->
+		<header class="row">
+			<div class="col-md-6">
+				<a href="../index.html"><img src="../img/logoloba.png" alt="loba"/></a>
+			</div>
+			<nav class="col-md-6 menu">
+				<a href="../index.html">Inicio</a>
+				<a href="about.html">Sobre LOBA</a>
+				<a href="contacto.html">Contacto</a>
+			</nav>
+			<div id="menu-mobile">
+					<ul>
+						<li class="burger"><i class="fa fa-bars" aria-hidden="true"></i></li>
+						<ul>
+							<li><a href="#">Inicio</a></li>
+							<li><a href="html/about.html">Sobre LOBA</a></li>
+							<li><a href="html/contacto.html">Contacto</a></li>
+						</ul>
+					</ul>
+			</div>
+		</header>
+		<section class="main row">
+			<h2 class="col-xs-12 col-sm-12 col-md-12">Platitos retrato</h2>
+			<p class="col-md-3">Platitos personalizados con retratos.</p>
+			<a href="#" data-toggle="modal" data-target="#platos" class="col-md-3">Encargá el tuyo!</a>
+			<div class="modal fade" tabindex="-1" role="dialog" id="platos"><!--Inicio EncargarPlatos-->
+  						<div class="modal-dialog">
+    						<div class="modal-content clearfix">
+    							<div class="modal-header">
+    								<h2>Encargá tu retrato:</h2>
+    							</div>
+    							<div class="modal-body ">
+    								<form class="row">
+    									<div class="col-md-6">
+    										<div class="form-group">
+												<label for="nombre">Nombre y Apellido: </label>
+												<input type="text" class="form-control" placeholder="Nombre y Apellido"/>
+											</div>
+											<div class="form-group">
+												<label for="mail">E-mail: </label>
+												<input type="email" class="form-control" placeholder="E-mail"/>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<label for="formadepago">Forma de Pago:</label>
+ 						  						<select class="form-control" id="formadepago"> 				
+ 						    						<option>Efectivo</option>
+  						  							<option>Tarjeta de crédito</option>
+    												<option>MercadoPago</option>
+ 						 						</select>
+											</div>
+											<div class="form-group">
+												<label for="file">Subí la foto de la persona que quieras retratar</label>
+												<div>
+													<label class="custom-file">
+  														<input type="file" id="file" class="custom-file-input">
+ 						 								<span class="custom-file-control"></span>
+													</label>
+												</div>
+											</div>	
+										</div>
+										<div class="form-group col-md-12">
+											<label>Ingresá tu comentario: (colores preferidos, aclaraciones, extras...)</label>
+											<textarea class="form-control">Tu comentario</textarea>
+										</div>
+									</form>
+    							</div>
+    							<div class="modal-footer">
+    								<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        							<button type="button" class="btn btn-primary">Enviar!</button>
+    							</div>
+							</div>
+						</div>
+			</div><!--Fin encargar platos-->
+			<div class="col-xs-12 col-sm-12 col-md-12"><!--empieza grilla imagenes-->
+				<div class="row">
+ 					 <div class="col-xs-12 col-sm-6 col-md-4">
+   						 <a href="#" class="thumbnail" data-toggle="modal" data-target="#myModal">
+     						 <img src="../img/platobenito.jpg" alt="...">
+    					</a>
+  					 </div>
+					<div class="modal fade" tabindex="-1" role="dialog" id="myModal"><!--Inicio myModal-->
+  						<div class="modal-dialog">
+    						<div class="modal-content">
+    							<div class="modal-body row">
+    								<img src="../img/platobenito.jpg" alt="" class="col-xs-12 col-sm-12 col-md-12">
+    								<p class="col-md-12">Plato para Benito</p>
+    							</div>
+    							<div class="modal-footer">
+       								 <button type="button" class="btn btn-secondary" data-dismiss="modal">X</button>
+      							</div>
+   							</div>
+  						</div>
+					</div><!--Fin myModal-->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+   						 <a href="#" class="thumbnail" data-toggle="modal" data-target="#myModal2">
+     						 <img src="../img/platoflor.jpg" alt="...">
+    					</a>
+  					 </div>
+					<div class="modal fade" tabindex="-1" role="dialog" id="myModal2"><!--Inicio myModal2-->
+  						<div class="modal-dialog">
+    						<div class="modal-content">
+    							<div class="modal-body row">
+    								<img src="../img/platoflor.jpg" alt="" class="col-xs-12 col-sm-12 col-md-12">
+    								<p class="col-md-12">Plato para Flor</p>
+    							</div>
+    							<div class="modal-footer">
+       								 <button type="button" class="btn btn-secondary" data-dismiss="modal">X</button>
+      							</div>
+   							</div>
+  						</div>
+					</div><!--Fin myModal2-->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+   						 <a href="#" class="thumbnail" data-toggle="modal" data-target="#myModal3">
+     						 <img src="../img/platojuana.jpg" alt="...">
+    					</a>
+  					 </div>
+					<div class="modal fade" tabindex="-1" role="dialog" id="myModal3"><!--Inicio myModal3-->
+  						<div class="modal-dialog">
+    						<div class="modal-content">
+    							<div class="modal-body row">
+    								<img src="../img/platojuana.jpg" alt="" class="col-xs-12 col-sm-12 col-md-12">
+    								<p class="col-md-12">Plato para Juana</p>
+    							</div>
+    							<div class="modal-footer">
+       							 	<button type="button" class="btn btn-secondary" data-dismiss="modal">X</button>
+      							</div>
+   							</div>
+  						</div>
+					</div><!--Fin myModal3-->
+				</div>
+				<div class="row">
+ 					 <div class="col-xs-12 col-sm-6 col-md-4">
+   						 <a href="#" class="thumbnail" data-toggle="modal" data-target="#myModal4">
+     						 <img src="../img/platomariana.jpg" alt="...">
+    					</a>
+  					 </div>
+					<div class="modal fade" tabindex="-1" role="dialog" id="myModal4"><!--Inicio myModal4-->
+  						<div class="modal-dialog">
+    						<div class="modal-content">
+    							<div class="modal-body row">
+    								<img src="../img/platomariana.jpg" alt="" class="col-xs-12 col-sm-12 col-md-12">
+    								<p class="col-md-12">Plato para Mariana</p>
+    							</div>
+    							<div class="modal-footer">
+       								 <button type="button" class="btn btn-secondary" data-dismiss="modal">X</button>
+      							</div>
+   							</div>
+  						</div>
+					</div><!--Fin myModal4-->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+   						 <a href="#" class="thumbnail" data-toggle="modal" data-target="#myModal5">
+     						 <img src="../img/platomaru.jpg" alt="...">
+    					</a>
+  					 </div>
+					<div class="modal fade" tabindex="-1" role="dialog" id="myModal5"><!--Inicio myModal5-->
+  						<div class="modal-dialog">
+    						<div class="modal-content">
+    							<div class="modal-body row">
+    								<img src="../img/platomaru.jpg" alt="" class="col-xs-12 col-sm-12 col-md-12">
+    								<p class="col-md-12">Plato para Maru</p>
+    							</div>
+    							<div class="modal-footer">
+       								 <button type="button" class="btn btn-secondary" data-dismiss="modal">X</button>
+      							</div>
+   							</div>
+  						</div>
+					</div><!--Fin myModal5-->
+					<div class="col-xs-12 col-sm-6 col-md-4">
+   						 <a href="#" class="thumbnail" data-toggle="modal" data-target="#myModal6">
+     						 <img src="../img/platopina.jpg" alt="...">
+    					</a>
+  					 </div>
+					<div class="modal fade" tabindex="-1" role="dialog" id="myModal6"><!--Inicio myModal6-->
+  						<div class="modal-dialog">
+    						<div class="modal-content">
+    							<div class="modal-body row">
+    								<img src="../img/platopina.jpg" alt="" class="col-xs-12 col-sm-12 col-md-12">
+    								<p class="col-md-12">Plato para Pina</p>
+    							</div>
+    							<div class="modal-footer">
+       							 	<button type="button" class="btn btn-secondary" data-dismiss="modal">X</button>
+      							</div>
+   							</div>
+  						</div>
+					</div><!--Fin myModal6-->
+				</div>
+			</div><!--fin grilla imagenes-->
+		</section>
+		<footer class="row">
+			<figure class="col-md-3">
+				<img src="../img/footer.PNG" width="100px" />
+			</figure>
+			<div class="col-md-3 contacto">
+				<h4>¿Consultas o sugerencias?</h4>
+				<p>solsuarezsoy@gmail.com</p>
+			</div>
+			<div class="col-md-3 newsletter">
+				<h4>Suscribite a nuestro newsletter!</h4>
+				<form class="newsletter row">
+					<div class="input-group input-group-sm col-md-8">
+  						<span class="input-group-addon" id="sizing-addon3">@</span>
+ 						 <input type="text" class="form-control" placeholder="Correo electrónico" aria-describedby="sizing-addon3"></div>
+ 						 <div>
+ 						 <button class="btn btn-default col-md-8" type="button">Enviar!</button>
+					</div>
+				</form>
+			</div>
+			<nav class="col-md-3 social-media">
+				<a href="https://www.facebook.com/lobaceramica/?fref=ts"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+				<a href="https://www.instagram.com/solsuarezsoy/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+				<a href="https://loba.mitiendanube.com/"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
+				<a href="mailto:solsuarezsoy@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+			</nav>
+		</footer>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script><!--Llamado a las Jquery de bootstrap-->
+	<script src="../js/bootstrap.min.js"></script> <!--Lllamado a javascript de bootstrap-->
+	<script src="https://use.fontawesome.com/cd28412829.js"></script>
+</body>
+</html>

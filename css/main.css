@@ -85,6 +85,14 @@ i{
 .perfil {
 	border-radius: 50%;
 }
+.btn-primary{
+	background-color: #FFB0A7;
+	border-color: #FFB0A7;
+}
+.btn-primary:hover{
+	background-color: #f71b73;
+	border-color: #f71b73;
+}
 /* Contacto */
 a {
 	color: #FFB0A7;
@@ -94,6 +102,13 @@ a {
 	background-size: cover;
 }
 /*Platitos*/
+#pedidoplatos:hover {
+	font-weight: bold;
+	color: #FFB0A7;
+}
+#pedidoplatos:visited {
+	color: #FFB0A7;
+}
 #platos .modal-header h2 {
 	color: #FFB0A7;
 }
